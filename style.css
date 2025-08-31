@@ -218,19 +218,22 @@ html {
 
 #about_me {
     color: white;
-    margin-top: 1.7rem;
+    margin-top: 2rem;
     display: block;
     text-align: center;
     font-size: 70px;
-    scroll-margin-top: 120px;
+    scroll-margin-top: 100px;
 }
 
 .aboutme_things {
     display: flex;
-    gap: 80px;
+    gap: 70px;
     align-items: flex-start;
     margin-bottom: 0;
     padding-bottom: 0;
+}
+.about_me_intro_line_1 {
+    line-height: 1.3;
 }
 .about_image {
     display: flex;
@@ -239,7 +242,7 @@ html {
     margin-top: 35px;
 }
 .eshallongpic {
-    height: auto;
+    height: 350px;
     max-width: 299px;
     border-radius: 10px;
 }
@@ -247,11 +250,10 @@ html {
 
 .aboutmeintro {
     color: white;
-    gap: 10px;
     font-size: 18px;
     margin-top: 39px;
-    margin-right: 7%;
-    line-height: 1.4;
+    margin-right: 6%;
+    line-height: 1.2;
     
 }
 .skills {
