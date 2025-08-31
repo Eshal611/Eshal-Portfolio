@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+/* Certificates Section Background */
+.certificatesback {
+  height: 6px;
+  width: 180px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #B415FF , #DF8908);
+  margin: 12px auto 30px auto; /* center + space */
+}
+
+/* Headings for Certificates */
+.certificateheading {
+  font-size: 28px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  margin-top: 60px;
+}
+
+/* Certificates Grid */
+.certificategrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin: 40px auto;
+  max-width: 1100px;
+  padding: 0 20px;
+}
+
+/* Single Certificate Card */
+.certificate {
+  background: #1a1a1a; /* dark background */
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.certificate:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+}
+
+/* Certificate Name */
+.certificatename {
+  font-size: 20px;
+  font-weight: bold;
+  color: #DF8908;
+  margin-bottom: 8px;
+}
+
+/* Issued by */
+.issued {
+  font-size: 15px;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+/* Link */
+.certificatelink {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #B415FF , #DF8908);
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: background 0.3s ease;
+}
+
+.certificatelink:hover {
+  background: linear-gradient(45deg, #DF8908, #B415FF);
+}
+
+/* Issued Date */
+.issueddate {
+  font-size: 13px;
+  color: #aaa;
+  margin-top: 6px;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+  .certificateheading {
+    font-size: 24px;
+  }
+
+  .certificatename {
+    font-size: 18px;
+  }
+}
+
+  </style>
+</head>
+<body>
+<!-- Certificates Section -->
+<h2 class="certificateheading">My Specializations</h2>
+<div class="certificatesback"></div>
+
+<div class="certificategrid">
+    <div class="certificate">
+        <h3 class="certificatename">Google Data Analysis</h3>
+        <p class="issued">Issued by: Google</p>
+        <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/LQDBHGN9JMN8" target="_blank" class="certificatelink">View Certificate</a>
+        <p class="issueddate">Issued on: July 27, 2024</p>
+    </div>
+
+    <div class="certificate">
+        <h3 class="certificatename">Google Digital Marketing & E-commerce</h3>
+        <p class="issued">Issued by: Google</p>
+        <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/97GRHL99HVWS" target="_blank" class="certificatelink">View Certificate</a>
+        <p class="issueddate">Issued on: Aug 1, 2024</p>
+    </div>
+</div>
+
+<!-- 🔥 New Certificates Section (same design, new heading) -->
+<h2 class="certificateheading">Professional Certifications</h2>
+<div class="certificatesback"></div>
+
+<div class="certificategrid">
+    <div class="certificate">
+        <h3 class="certificatename">Foundations of Project Management</h3>
+        <p class="issued">Issued by: Google</p>
+        <a href="#" target="_blank" class="certificatelink">View Certificate</a>
+        <p class="issueddate">Issued on: Jan 15, 2024</p>
+    </div>
+
+    <div class="certificate">
+        <h3 class="certificatename">Microsoft Excel Advanced</h3>
+        <p class="issued">Issued by: Microsoft</p>
+        <a href="#" target="_blank" class="certificatelink">View Certificate</a>
+        <p class="issueddate">Issued on: Feb 10, 2024</p>
+    </div>
+
+    <div class="certificate">
+        <h3 class="certificatename">AI for Everyone</h3>
+        <p class="issued">Issued by: Coursera</p>
+        <a href="#" target="_blank" class="certificatelink">View Certificate</a>
+        <p class="issueddate">Issued on: Mar 5, 2024</p>
+    </div>
+</div>
+
+</body>
+</html>
