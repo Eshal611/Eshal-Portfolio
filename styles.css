@@ -228,7 +228,7 @@ html {
 
 .aboutme_things {
     display: flex;
-    gap: 100px;
+    gap: 80px;
     align-items: flex-start;
     margin-bottom: 0;
     padding-bottom: 0;
