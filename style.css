@@ -1182,3 +1182,11 @@ html {
     border: 3px white solid;
     border-radius: 10px;
 }
+.service2box {
+    height: 280px;
+    width: 300px;
+    background-color: transparent;
+    border: 3px white solid;
+    border-radius: 10px;
+
+}
