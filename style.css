@@ -104,14 +104,14 @@ html {
 
 
 .circle-img {
-  width: 300px;
-  height: 300px;
+  width: 270px;
+  height: 270px;
   border-radius: 50%;
   background: white; 
   padding: 3px;
   box-sizing: border-box;
   overflow: hidden;
-  margin: 40px auto 0;   
+  margin: 30px auto 0;   
 
 }
 
@@ -125,9 +125,9 @@ html {
 .Hlines {
     color: white;
     display: block;
-    font-size: 60px;
+    font-size: 65px;
     font-weight: 600;
-    line-height: 70px;
+    line-height: 60px;
     text-align: center;
     margin: 15px auto;
 }
@@ -913,20 +913,68 @@ html {
     padding: 8px 0;  
     margin-top:60px;
     color: white; 
+    scroll-margin-top: 100px;
 }
- 
+
+
+.inner_services_div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    z-index: 10;
+    margin-top: 30px;
+    color: white;
+}
 .service1box {
-    height: 280px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
     background-color: transparent;
     border: 3px white solid;
     border-radius: 10px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: all 0.3s ease-in;
+    margin-bottom: 20px;
 }
-.service2box {
+
+
+.service1box h3 {
+    font-size: 22px;
+}
+
+.service1box h2 {
+    font-size: 29px;
+    margin-top: 6px;
+    background: linear-gradient( to right, #B415FF, #DF8908);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.services_caption {
+    font-size: 17px;
+    margin-top: 8px;
+}
+
+.services_readmore{
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 17px;
+}
+
+.service1box:hover {
+    scale: 1.04;
+    border: 3px #B415FF solid;
+    background: linear-gradient(to right, rgb(74, 22, 22), rgb(63, 16, 63));
+}
+
+
+/* .service2box {
     height: 280px;
     width: 300px;
     background-color: transparent;
     border: 3px white solid;
     border-radius: 10px;
 
-}
+} */
