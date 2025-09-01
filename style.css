@@ -9,14 +9,14 @@ html {
 }
 .Body {
     background-color: #110d0d;
-    background-color: #110d0d;
+    background-color: #161513;
     scroll-behavior: smooth;
     padding-top: 100px;
 }
 .header_head {
     height:100px;
     position: fixed;
-    background-color: #110d0d;
+    background-color: #161513;
     z-index: 9999;
     top: 0;               
     left: 0;
@@ -1041,7 +1041,7 @@ html {
 }
 .user_input_text {
     padding: 15px;
-    width: 350px;
+    width: 400px;
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: #32323c;
@@ -1049,3 +1049,52 @@ html {
     border-radius: 5px;
     border: 2px solid #32323c;
 }
+
+.user_input_text:hover {
+    border: 2px solid white;
+}
+
+.submit_button {
+    background: linear-gradient(to right, #B415FF, #DF8908);
+    color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 17px;
+    border-radius: 30px;
+    border: solid transparent ;
+    transition: all 0.3s ease;
+    /* margin-bottom: 100px; */
+}
+.submit_button:hover {
+    transform: scale(1.1);
+}
+
+.bottom_wrapper {
+    display: flex;
+}
+
+.bottom_area_div{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: white;
+    background: url("logor.png")no-repeat center/cover; 
+    width: 200px;     
+    height: 100px;
+    margin-left: 70px;
+    position: relative;
+    z-index: 999;
+}
+
+.bottom_intro_line {
+    color: white;
+    word-wrap: break-word;
+    z-index: 302;
+    margin-top: 80px;
+    max-width: 44ch;
+    margin-left: -130px;
+}
+
+
