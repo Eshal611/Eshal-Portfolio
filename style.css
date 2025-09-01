@@ -1097,4 +1097,37 @@ html {
     margin-left: -130px;
 }
 
+.bottom_logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-left: auto;
+    gap:10px;
+    margin-right: 50px;
+}
 
+
+.horizontal_line {
+    margin-top: 30px;
+
+}
+
+.bottom_div_bottom {
+    display: flex;
+    color: white;
+    margin-top: 30px;
+    margin-left: 130px;
+    margin-bottom: 70px;
+    font-size: 16px;
+}
+
+.bottom_content_left_bottom {
+    display: flex;
+}
+
+.bottom_content_right_bottom {
+    display: flex;
+    margin-left: auto;
+    margin-right: 40px;
+}
