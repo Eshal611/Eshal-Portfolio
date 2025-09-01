@@ -977,4 +977,75 @@ html {
     font-size: 60px;
     display: block;
     text-align: center;
+    scroll-margin-top: 100px;
+}
+
+
+.outer-div-lets-talk {
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+    margin-left: 140px;
+    align-items: flex-start;
+    gap:100px;
+}
+
+.lets_talk {
+    background: linear-gradient(270deg, #DF8908 80%, #B415FF 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    margin-top: 70px;
+    margin-left: 0px;
+    font-weight: 700;
+}
+.connnect_left {
+    margin-left: 30px;
+}
+.connect_left_line {
+    word-wrap: break-word;
+    max-width: 40ch;
+    line-height: 25px;
+    margin-top: 40px;
+}
+
+.connections_email {
+    display: flex;
+    align-items: left;
+    margin-top: 20px;
+    gap: 20px;
+}
+.connections_call {
+    display: flex;
+    align-items: left;
+    margin-top: 20px;
+    gap: 20px;
+}
+.connections_location {
+    display: flex;
+    align-items: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+.form_label {
+    font-weight: 300;
+}
+
+
+.connect_right {
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+.user_input_text {
+    padding: 15px;
+    width: 350px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #32323c;
+    color: #a0a0a0;
+    border-radius: 5px;
+    border: 2px solid #32323c;
 }
