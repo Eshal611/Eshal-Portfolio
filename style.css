@@ -1136,3 +1136,518 @@ html {
 .bottom_content_right_bottom :hover {
     text-decoration: underline;
 }
+
+
+/* ========== MEDIA QUERIES FOR RESPONSIVENESS ========== */
+
+/* For tablets and smaller desktops */
+@media (max-width: 1200px) {
+    .header_div {
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+    
+    .aboutme_things {
+        gap: 50px;
+    }
+    
+    .about_image {
+        padding-left: 8%;
+    }
+    
+    .aboutmeintro {
+        margin-right: 5%;
+    }
+    
+    .outer-div-lets-talk {
+        margin-left: 80px;
+        gap: 70px;
+    }
+    
+    .bottom_area_div {
+        margin-left: 50px;
+    }
+    
+    .bottom_div_bottom {
+        margin-left: 80px;
+    }
+}
+
+/* For smaller tablets */
+@media (max-width: 992px) {
+    .header_namelogo {
+        max-height: 250px;
+    }
+    
+    .nav a {
+        font-size: 18px;
+    }
+    
+    .Hlines {
+        font-size: 50px;
+        line-height: 55px;
+    }
+    
+    .circle-img {
+        width: 240px;
+        height: 240px;
+    }
+    
+    .aboutme_things {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    
+    .about_image {
+        padding-left: 0;
+        justify-content: center;
+    }
+    
+    .aboutmeintro {
+        margin: 0 10%;
+        text-align: center;
+    }
+    
+    .skills {
+        width: 90%;
+        margin: 1rem auto;
+    }
+    
+    .spe_boxes {
+        gap: 60px;
+    }
+    
+    .service1box {
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+    
+    .outer-div-lets-talk {
+        margin-left: 50px;
+        gap: 50px;
+        justify-content: center;
+    }
+    
+    .connect_left {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .connect_left_line {
+        max-width: 100%;
+    }
+    
+    .bottom_area_div {
+        margin-left: 30px;
+    }
+    
+    .bottom_intro_line {
+        margin-left: -100px;
+    }
+    
+    .bottom_div_bottom {
+        margin-left: 50px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .Body {
+        padding-top: 80px;
+    }
+    
+    .header_head {
+        height: 80px;
+    }
+    
+    .header_div {
+        padding: 0 20px;
+        justify-content: space-between;
+    }
+    
+    .header_namelogo {
+        max-height: 180px;
+    }
+    
+    .nav {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background-color: #161513;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 50px;
+        transition: left 0.3s ease;
+        z-index: 1000;
+    }
+    
+    .nav.active {
+        left: 0;
+    }
+    
+    .nav a {
+        margin: 15px 0;
+        font-size: 20px;
+    }
+    
+    .outer_conme_div {
+        display: none;
+    }
+    
+    /* Mobile menu toggle button */
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 28px;
+        cursor: pointer;
+    }
+    
+    .Hlines {
+        font-size: 40px;
+        line-height: 45px;
+    }
+    
+    .line1 {
+        font-size: 16px;
+    }
+    
+    .line1 br {
+        display: none;
+    }
+    
+    .circle-img {
+        width: 220px;
+        height: 220px;
+    }
+    
+    .buttons_container {
+        gap: 30px;
+    }
+    
+    .outer_conme_div2, .outer_resume_div {
+        height: 55px;
+        width: 170px;
+    }
+    
+    #about_me {
+        font-size: 60px;
+    }
+    
+    .eshallongpic {
+        height: 300px;
+        max-width: 250px;
+    }
+    
+    .certificatesand {
+        font-size: 40px;
+    }
+    
+    .my-specializations {
+        font-size: 32px;
+    }
+    
+    .cer_boxes {
+        margin-left: 15px;
+        justify-content: center;
+    }
+    
+    #my_services {
+        font-size: 40px;
+    }
+    
+    .inner_services_div {
+        justify-content: center;
+    }
+    
+    .service1box {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    
+    #connect-contact-me {
+        font-size: 50px;
+    }
+    
+    .outer-div-lets-talk {
+        margin-left: 20px;
+        gap: 40px;
+    }
+    
+    .lets_talk {
+        font-size: 40px;
+        margin-top: 50px;
+    }
+    
+    .user_input_text {
+        width: 350px;
+    }
+    
+    .bottom_wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .bottom_area_div {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    
+    .bottom_intro_line {
+        margin: 20px 0;
+        max-width: 100%;
+        margin-left: 0;
+    }
+    
+    .bottom_logos {
+        margin: 20px auto;
+        justify-content: center;
+    }
+    
+    .bottom_div_bottom {
+        flex-direction: column;
+        margin-left: 0;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .bottom_content_right_bottom {
+        margin: 0 auto;
+    }
+}
+
+/* For small mobile devices */
+@media (max-width: 576px) {
+    .header_div {
+        padding: 0 15px;
+    }
+    
+    .header_namelogo {
+        max-height: 150px;
+    }
+    
+    .menu-toggle {
+        font-size: 24px;
+    }
+    
+    .Hlines {
+        font-size: 32px;
+        line-height: 38px;
+    }
+    
+    .line1 {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 0 15px;
+    }
+    
+    .circle-img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .buttons_container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    #about_me {
+        font-size: 50px;
+    }
+    
+    .aboutmeintro {
+        margin: 0 5%;
+        font-size: 16px;
+    }
+    
+    .certificatesand {
+        font-size: 32px;
+    }
+    
+    .my-specializations {
+        font-size: 24px;
+    }
+    
+    .spe_boxes {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .box1, .box2 {
+        width: 90%;
+        max-width: 300px;
+        padding: 20px;
+    }
+    
+    .cer_boxes {
+        margin-left: 0;
+    }
+    
+    .box3, .box4, .box5, .box6, 
+    .box7, .box8, .box9, .box10, 
+    .box11, .box12, .box13, .box14, 
+    .box15, .box16, .box17, .box18, 
+    .box19, .box20, .box21, .box22, 
+    .box23 {
+        width: 90%;
+        max-width: 300px;
+        margin: 15px 0;
+    }
+    
+    #my_services {
+        font-size: 35px;
+    }
+    
+    .service1box {
+        width: 220px;
+        height: auto;
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    #connect-contact-me {
+        font-size: 40px;
+    }
+    
+    .outer-div-lets-talk {
+        margin-left: 10px;
+        gap: 30px;
+    }
+    
+    .lets_talk {
+        font-size: 35px;
+        margin-top: 40px;
+    }
+    
+    .connect_left_line {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+    
+    .user_input_text {
+        width: 300px;
+    }
+    
+    .connections_email, 
+    .connections_call, 
+    .connections_location {
+        justify-content: center;
+    }
+}
+
+/* For extra small devices */
+@media (max-width: 400px) {
+    .header_namelogo {
+        max-height: 120px;
+    }
+    
+    .Hlines {
+        font-size: 28px;
+        line-height: 33px;
+    }
+    
+    .circle-img {
+        width: 180px;
+        height: 180px;
+    }
+    
+    #about_me {
+        font-size: 40px;
+    }
+    
+    .certificatesand {
+        font-size: 28px;
+    }
+    
+    .my-specializations {
+        font-size: 20px;
+    }
+    
+    .aboutmeintro {
+        font-size: 15px;
+    }
+    
+    .skill p {
+        font-size: 16px;
+    }
+    
+    #my_services {
+        font-size: 30px;
+    }
+    
+    .service1box {
+        width: 200px;
+        padding: 15px;
+    }
+    
+    .service1box h2 {
+        font-size: 24px;
+    }
+    
+    #connect-contact-me {
+        font-size: 35px;
+    }
+    
+    .lets_talk {
+        font-size: 30px;
+    }
+    
+    .user_input_text {
+        width: 260px;
+    }
+    
+    .bottom_intro_line {
+        font-size: 14px;
+        padding: 0 15px;
+    }
+    
+    .bottom_content_right_bottom {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+/* Mobile menu toggle button style */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.close-menu {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 1002;
+}
+
+/* Show menu toggle on mobile */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    
+    .nav.active + .close-menu {
+        display: block;
+    }
+}
