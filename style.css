@@ -1048,6 +1048,7 @@ html {
     color: #a0a0a0;
     border-radius: 5px;
     border: 2px solid #32323c;
+    outline: none;
 }
 
 .user_input_text:hover {
