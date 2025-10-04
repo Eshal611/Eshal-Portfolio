@@ -111,7 +111,7 @@ html {
   padding: 3px;
   box-sizing: border-box;
   overflow: hidden;
-  margin: 30px auto 0;   
+  margin: 20px auto 0;   
 
 }
 
@@ -184,7 +184,7 @@ html {
     height: 65px;
     width: 190px;
     border-radius: 50%;
-    background-color: #110d0d;
+    background-color: #161513;
     margin-right: 10px;
     transition: all 0.1s ease-in;
     border: 2.5px solid white;
@@ -288,7 +288,18 @@ html {
 .skill:hover {
     transform: scale(1.06);
 }
+/* latet work styling */
+#latest_work {
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
 
+.latestworkweb {
+    max-height: 200px;
+    width: 200px;
+}
 
 .certificatesand {
     color: white;
@@ -1063,7 +1074,7 @@ html {
     padding-right: 30px;
     font-size: 17px;
     border-radius: 30px;
-    border: solid transparent ;
+    border: 0.00001px solid transparent ;
     transition: all 0.3s ease;
     /* margin-bottom: 100px; */
 }
