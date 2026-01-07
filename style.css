@@ -1002,6 +1002,10 @@ html {
     border: 3px #B415FF solid;
     box-shadow: 3px 3px 10px #DF8908;
 }
+.outer_services_div{
+    display: flex;
+    justify-content: center;
+}
 
 #connect-contact-me {
     color: white;
