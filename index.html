@@ -438,7 +438,7 @@
 
         <div class="connect_right">
 
-       <form id="contactForm">      
+       <form id="contactForm" action="https://formspree.io/f/xdkldgeg" method="POST">      
             <!-- <input type="hidden" name="_next" value="">
             <input type="hidden" name="_template" value="table"> -->
                 <div class="connect_name">
@@ -463,34 +463,6 @@
                 </div>
                 <button type="submit" class="submit_button" >Submit now</button>
             </form>
-<p id="msg"></p>
-
-<script>
-const contactForm = document.getElementById("contactForm");
-const msg = document.getElementById("msg");
-
-contactForm.addEventListener("submit", async (e) => {
-  e.preventDefault();
-
-  const res = await fetch("http://localhost:3000/send", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      name: document.getElementById("name").value,
-      email: document.getElementById("email").value,
-      message: document.getElementById("message").value
-    })
-  });
-
-  if (res.ok) {
-    msg.innerText = "✅ Message sent!";
-    contactForm.reset();
-  } else {
-    msg.innerText = "❌ Something went wrong!";
-  }
-});
-</script>
-
         </div>
     </div>
 
