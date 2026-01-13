@@ -499,23 +499,7 @@ html {
 
 /* sab boxes ke full design */
 
-/* .box1 {                                    
-    background-color: #232222;
-    padding-top: 30px;
-    padding-right:50px;
-    padding-left:50px;
-    padding-bottom: 17px;
-    text-align: center;
-    display: inline-flex;
-    flex-direction: column;
-    font-size: 16px;
-    border-radius: 15px;
-    box-shadow: 2px 2px 1px #B415FF ;
-    transition: all 0.2s ease-out;
-    transform: scale(1);
-    cursor: pointer;
-    z-index: 9998;
-} */
+
 
 
 .box1, .box2, .boxthree{
@@ -1262,11 +1246,21 @@ html {
 
 /* ========== MEDIA QUERIES FOR RESPONSIVENESS ========== */
 
-/* For tablets and smaller desktops */
+/* For large tablets and small laptops (1024px - 1200px) */
 @media (max-width: 1200px) {
     .header_div {
         justify-content: space-between;
-        padding: 0 30px;
+        padding: 0 40px;
+    }
+    
+    .nav a {
+        font-size: 18px;
+        margin: 0 12px;
+    }
+    
+    .outer_conme_div {
+        width: 200px;
+        height: 60px;
     }
     
     .aboutme_things {
@@ -1286,8 +1280,17 @@ html {
         gap: 70px;
     }
     
+    .experience-boxes {
+        gap: 25px;
+    }
+    
+    .exp-box {
+        width: 240px;
+        height: 300px;
+    }
+    
     .bottom_area_div {
-        margin-left: 50px;
+        margin-left: 40px;
     }
     
     .bottom_div_bottom {
@@ -1295,30 +1298,66 @@ html {
     }
 }
 
-/* For smaller tablets */
+/* For tablets (768px - 1024px) */
 @media (max-width: 992px) {
     .header_namelogo {
-        max-height: 250px;
+        max-height: 180px;
     }
     
-    .nav a {
-        font-size: 18px;
+    .nav {
+        display: none; /* Hide navigation on tablets */
+    }
+    
+    .outer_conme_div {
+        display: none; /* Hide connect button on tablets */
+    }
+    
+    /* Menu toggle button removed */
+    .menu-toggle, .close-menu {
+        display: none !important;
     }
     
     .Hlines {
-        font-size: 50px;
-        line-height: 55px;
+        font-size: 45px;
+        line-height: 50px;
+        margin-top: 30px;
+    }
+    
+    .line1 {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+    
+    .line1 br {
+        display: none;
     }
     
     .circle-img {
-        width: 240px;
-        height: 240px;
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+    }
+    
+    .buttons_container {
+        gap: 30px;
+        margin-top: 30px;
+    }
+    
+    .outer_conme_div2, .outer_resume_div {
+        height: 55px;
+        width: 170px;
+    }
+    
+    #about_me {
+        font-size: 55px;
+        margin-top: 60px;
     }
     
     .aboutme_things {
         flex-direction: column;
         align-items: center;
         gap: 40px;
+        padding: 0 20px;
     }
     
     .about_image {
@@ -1326,29 +1365,111 @@ html {
         justify-content: center;
     }
     
+    .eshallongpic {
+        height: 300px;
+        max-width: 280px;
+    }
+    
     .aboutmeintro {
-        margin: 0 10%;
+        margin: 0;
         text-align: center;
+        font-size: 17px;
     }
     
     .skills {
         width: 90%;
-        margin: 1rem auto;
+        margin: 1.5rem auto;
     }
     
-    .spe_boxes {
-        gap: 60px;
+    #my_services {
+        font-size: 45px;
+        margin-top: 80px;
+    }
+    
+    .inner_services_div {
+        justify-content: center;
+        padding: 0 20px;
     }
     
     .service1box {
-        margin-right: 30px;
-        margin-left: 30px;
+        width: 220px;
+        height: 240px;
+        margin: 15px;
+        padding: 20px;
+    }
+    
+    .workExperience {
+        font-size: 45px;
+    }
+    
+    .experience-boxes {
+        padding: 30px 20px;
+        gap: 20px;
+    }
+    
+    .exp-box {
+        width: 220px;
+        height: 290px;
+        padding: 20px;
+    }
+    
+    .exp-title {
+        font-size: 20px;
+    }
+    
+    .exp-company {
+        font-size: 16px;
+    }
+    
+    .exp-points li {
+        font-size: 14px;
+    }
+    
+    .certificatesand {
+        font-size: 45px;
+    }
+    
+    .my-specializations {
+        font-size: 35px;
+    }
+    
+    .spe_boxes {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 0 20px;
+    }
+    
+    .box1, .boxthree {
+        width: 80%;
+        max-width: 400px;
+        padding: 25px;
+    }
+    
+    .cer_boxes {
+        margin-left: 20px;
+        margin-right: 20px;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .box23 {
+        width: 45%;
+        max-width: 250px;
+        padding: 20px;
+        margin: 10px 0;
+    }
+    
+    #connect-contact-me {
+        font-size: 45px;
+        margin-top: 80px;
     }
     
     .outer-div-lets-talk {
-        margin-left: 50px;
+        margin-left: 40px;
         gap: 50px;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
     
     .connect_left {
@@ -1360,152 +1481,7 @@ html {
     
     .connect_left_line {
         max-width: 100%;
-    }
-    
-    .bottom_area_div {
-        margin-left: 30px;
-    }
-    
-    .bottom_intro_line {
-        margin-left: -100px;
-    }
-    
-    .bottom_div_bottom {
-        margin-left: 50px;
-    }
-}
-
-/* For mobile devices */
-@media (max-width: 768px) {
-    .Body {
-        padding-top: 80px;
-    }
-    
-    .header_head {
-        height: 80px;
-    }
-    
-    .header_div {
         padding: 0 20px;
-        justify-content: space-between;
-    }
-    
-    .header_namelogo {
-        max-height: 180px;
-    }
-    
-    .nav {
-        position: fixed;
-        top: 80px;
-        left: -100%;
-        width: 100%;
-        height: calc(100vh - 80px);
-        background-color: #161513;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        padding-top: 50px;
-        transition: left 0.3s ease;
-        z-index: 1000;
-    }
-    
-    .nav.active {
-        left: 0;
-    }
-    
-    .nav a {
-        margin: 15px 0;
-        font-size: 20px;
-    }
-    
-    .outer_conme_div {
-        display: none;
-    }
-    
-    /* Mobile menu toggle button */
-    .menu-toggle {
-        display: block;
-        background: none;
-        border: none;
-        color: white;
-        font-size: 28px;
-        cursor: pointer;
-    }
-    
-    .Hlines {
-        font-size: 40px;
-        line-height: 45px;
-    }
-    
-    .line1 {
-        font-size: 16px;
-    }
-    
-    .line1 br {
-        display: none;
-    }
-    
-    .circle-img {
-        width: 220px;
-        height: 220px;
-    }
-    
-    .buttons_container {
-        gap: 30px;
-    }
-    
-    .outer_conme_div2, .outer_resume_div {
-        height: 55px;
-        width: 170px;
-    }
-    
-    #about_me {
-        font-size: 60px;
-    }
-    
-    .eshallongpic {
-        height: 300px;
-        max-width: 250px;
-    }
-    
-    .certificatesand {
-        font-size: 40px;
-    }
-    
-    .my-specializations {
-        font-size: 32px;
-    }
-    
-    .cer_boxes {
-        margin-left: 15px;
-        justify-content: center;
-    }
-    
-    #my_services {
-        font-size: 40px;
-    }
-    
-    .inner_services_div {
-        justify-content: center;
-    }
-    
-    .service1box {
-        margin-right: 15px;
-        margin-left: 15px;
-    }
-    
-    #connect-contact-me {
-        font-size: 50px;
-    }
-    
-    .outer-div-lets-talk {
-        margin-left: 20px;
-        gap: 40px;
-    }
-    
-    .lets_talk {
-        font-size: 40px;
-        margin-top: 50px;
     }
     
     .user_input_text {
@@ -1516,17 +1492,21 @@ html {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        padding: 0 20px;
     }
     
     .bottom_area_div {
         margin-left: 0;
         margin-bottom: 20px;
+        width: 150px;
+        height: 80px;
     }
     
     .bottom_intro_line {
         margin: 20px 0;
         max-width: 100%;
         margin-left: 0;
+        font-size: 16px;
     }
     
     .bottom_logos {
@@ -1539,142 +1519,54 @@ html {
         margin-left: 0;
         align-items: center;
         gap: 15px;
+        text-align: center;
+        padding: 0 20px;
     }
     
     .bottom_content_right_bottom {
         margin: 0 auto;
+        flex-direction: column;
+        gap: 10px;
     }
 }
 
-/* For small mobile devices */
-@media (max-width: 576px) {
+/* For mobile devices (576px - 768px) */
+@media (max-width: 768px) {
+    .Body {
+        padding-top: 70px;
+    }
+    
+    .header_head {
+        height: 70px;
+    }
+    
     .header_div {
-        padding: 0 15px;
+        padding: 0 20px;
+        justify-content: space-between;
     }
     
     .header_namelogo {
-        max-height: 150px;
+        max-height: 140px;
     }
     
-    .menu-toggle {
-        font-size: 24px;
+    .nav {
+        display: none; /* Hide navigation on mobile */
+    }
+    
+    .outer_conme_div {
+        display: none; /* Hide connect button on mobile */
     }
     
     .Hlines {
-        font-size: 32px;
-        line-height: 38px;
+        font-size: 38px;
+        line-height: 42px;
+        padding: 0 20px;
     }
     
     .line1 {
-        font-size: 14px;
-        line-height: 20px;
-        padding: 0 15px;
-    }
-    
-    .circle-img {
-        width: 200px;
-        height: 200px;
-    }
-    
-    .buttons_container {
-        flex-direction: column;
-        gap: 20px;
-    }
-    
-    #about_me {
-        font-size: 50px;
-    }
-    
-    .aboutmeintro {
-        margin: 0 5%;
-        font-size: 16px;
-    }
-    
-    .certificatesand {
-        font-size: 32px;
-    }
-    
-    .my-specializations {
-        font-size: 24px;
-    }
-    
-    .spe_boxes {
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-    }
-    
-    .box1, .box2 {
-        width: 90%;
-        max-width: 300px;
-        padding: 20px;
-    }
-    
-    .cer_boxes {
-        margin-left: 0;
-    }
-    
-    .box3, .box4, .box5, .box6, 
-    .box7, .box8, .box9, .box10, 
-    .box11, .box12, .box13, .box14, 
-    .box15, .box16, .box17, .box18, 
-    .box19, .box20, .box21, .box22, 
-    .box23 {
-        width: 90%;
-        max-width: 300px;
-        margin: 15px 0;
-    }
-    
-    #my_services {
-        font-size: 35px;
-    }
-    
-    .service1box {
-        width: 220px;
-        height: auto;
-        padding: 20px;
-        margin: 10px;
-    }
-    
-    #connect-contact-me {
-        font-size: 40px;
-    }
-    
-    .outer-div-lets-talk {
-        margin-left: 10px;
-        gap: 30px;
-    }
-    
-    .lets_talk {
-        font-size: 35px;
-        margin-top: 40px;
-    }
-    
-    .connect_left_line {
-        font-size: 16px;
-        padding: 0 10px;
-    }
-    
-    .user_input_text {
-        width: 300px;
-    }
-    
-    .connections_email, 
-    .connections_call, 
-    .connections_location {
-        justify-content: center;
-    }
-}
-
-/* For extra small devices */
-@media (max-width: 400px) {
-    .header_namelogo {
-        max-height: 120px;
-    }
-    
-    .Hlines {
-        font-size: 28px;
-        line-height: 33px;
+        font-size: 15px;
+        line-height: 22px;
+        padding: 0 25px;
     }
     
     .circle-img {
@@ -1682,20 +1574,24 @@ html {
         height: 180px;
     }
     
+    .buttons_container {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 25px;
+    }
+    
     #about_me {
-        font-size: 40px;
+        font-size: 48px;
     }
     
-    .certificatesand {
-        font-size: 28px;
-    }
-    
-    .my-specializations {
-        font-size: 20px;
+    .eshallongpic {
+        height: 280px;
+        max-width: 250px;
     }
     
     .aboutmeintro {
-        font-size: 15px;
+        font-size: 16px;
+        padding: 0 15px;
     }
     
     .skill p {
@@ -1703,16 +1599,199 @@ html {
     }
     
     #my_services {
-        font-size: 30px;
+        font-size: 40px;
     }
     
     .service1box {
         width: 200px;
+        height: 230px;
         padding: 15px;
+        margin: 10px;
     }
     
     .service1box h2 {
         font-size: 24px;
+    }
+    
+    .service1box h3 {
+        font-size: 20px;
+    }
+    
+    .services_caption {
+        font-size: 15px;
+    }
+    
+    .workExperience {
+        font-size: 40px;
+    }
+    
+    .experience-boxes {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+    
+    .exp-box {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .certificatesand {
+        font-size: 40px;
+    }
+    
+    .my-specializations {
+        font-size: 30px;
+    }
+    
+    .cer_boxes {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .box23 {
+        width: 80%;
+        max-width: 300px;
+    }
+    
+    #connect-contact-me {
+        font-size: 40px;
+    }
+    
+    .outer-div-lets-talk {
+        margin-left: 20px;
+        margin-right: 20px;
+        gap: 40px;
+    }
+    
+    .lets_talk {
+        font-size: 35px;
+        margin-top: 40px;
+    }
+    
+    .user_input_text {
+        width: 320px;
+    }
+    
+    .bottom_intro_line {
+        font-size: 15px;
+    }
+}
+
+/* For small mobile devices (400px - 576px) */
+@media (max-width: 576px) {
+    .header_div {
+        padding: 0 15px;
+    }
+    
+    .header_namelogo {
+        max-height: 120px;
+    }
+    
+    .Hlines {
+        font-size: 32px;
+        line-height: 36px;
+        padding: 0 15px;
+    }
+    
+    .line1 {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 0 20px;
+    }
+    
+    .circle-img {
+        width: 160px;
+        height: 160px;
+    }
+    
+    .outer_conme_div2, .outer_resume_div {
+        height: 50px;
+        width: 160px;
+        font-size: 15px;
+    }
+    
+    #about_me {
+        font-size: 42px;
+    }
+    
+    .eshallongpic {
+        height: 250px;
+        max-width: 220px;
+    }
+    
+    .aboutmeintro {
+        font-size: 15px;
+        padding: 0 10px;
+    }
+    
+    #my_services {
+        font-size: 35px;
+    }
+    
+    .inner_services_div {
+        padding: 0 10px;
+    }
+    
+    .service1box {
+        width: 180px;
+        height: 220px;
+        padding: 15px;
+        margin: 10px 5px;
+    }
+    
+    .service1box h2 {
+        font-size: 22px;
+    }
+    
+    .service1box h3 {
+        font-size: 18px;
+    }
+    
+    .services_caption {
+        font-size: 14px;
+    }
+    
+    .workExperience {
+        font-size: 35px;
+    }
+    
+    .exp-box {
+        width: 260px;
+        height: 270px;
+        padding: 15px;
+    }
+    
+    .exp-title {
+        font-size: 19px;
+    }
+    
+    .exp-company {
+        font-size: 15px;
+    }
+    
+    .exp-points li {
+        font-size: 13px;
+    }
+    
+    .certificatesand {
+        font-size: 35px;
+    }
+    
+    .my-specializations {
+        font-size: 26px;
+    }
+    
+    .box1, .boxthree {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    .box23 {
+        width: 90%;
+        padding: 15px;
     }
     
     #connect-contact-me {
@@ -1723,8 +1802,128 @@ html {
         font-size: 30px;
     }
     
+    .connect_left_line {
+        font-size: 15px;
+        padding: 0 15px;
+    }
+    
     .user_input_text {
-        width: 260px;
+        width: 280px;
+    }
+    
+    .connections_email, 
+    .connections_call, 
+    .connections_location {
+        justify-content: center;
+        font-size: 14px;
+    }
+}
+
+/* For extra small devices (under 400px) */
+@media (max-width: 400px) {
+    .header_namelogo {
+        max-height: 100px;
+    }
+    
+    .Hlines {
+        font-size: 28px;
+        line-height: 32px;
+        padding: 0 10px;
+    }
+    
+    .circle-img {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .outer_conme_div2, .outer_resume_div {
+        height: 45px;
+        width: 150px;
+        font-size: 14px;
+    }
+    
+    #about_me {
+        font-size: 36px;
+    }
+    
+    .eshallongpic {
+        height: 220px;
+        max-width: 200px;
+    }
+    
+    #my_services {
+        font-size: 32px;
+    }
+    
+    .service1box {
+        width: 160px;
+        height: 210px;
+        padding: 12px;
+        margin: 8px 4px;
+    }
+    
+    .service1box h2 {
+        font-size: 20px;
+    }
+    
+    .service1box h3 {
+        font-size: 16px;
+    }
+    
+    .services_caption {
+        font-size: 13px;
+    }
+    
+    .services_readmore {
+        font-size: 14px;
+    }
+    
+    .workExperience {
+        font-size: 32px;
+    }
+    
+    .exp-box {
+        width: 240px;
+        height: 260px;
+        padding: 12px;
+    }
+    
+    .exp-title {
+        font-size: 18px;
+    }
+    
+    .exp-company {
+        font-size: 14px;
+    }
+    
+    .exp-points li {
+        font-size: 12px;
+    }
+    
+    .certificatesand {
+        font-size: 32px;
+    }
+    
+    .my-specializations {
+        font-size: 24px;
+    }
+    
+    #connect-contact-me {
+        font-size: 32px;
+    }
+    
+    .lets_talk {
+        font-size: 28px;
+    }
+    
+    .user_input_text {
+        width: 250px;
+        padding: 12px;
+    }
+    
+    .submit_button {
+        padding: 10px 25px;
+        font-size: 15px;
     }
     
     .bottom_intro_line {
@@ -1732,44 +1931,22 @@ html {
         padding: 0 15px;
     }
     
-    .bottom_content_right_bottom {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
+    .bottom_div_bottom {
+        font-size: 14px;
     }
 }
 
-/* Mobile menu toggle button style */
-.menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 28px;
-    cursor: pointer;
-    z-index: 1001;
-}
-
-.close-menu {
-    display: none;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 28px;
-    cursor: pointer;
-    z-index: 1002;
-}
-
-/* Show menu toggle on mobile */
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
+/* Navigation visibility for desktop only */
+@media (min-width: 993px) {
+    .nav {
+        display: flex;
     }
     
-    .nav.active + .close-menu {
-        display: block;
+    .outer_conme_div {
+        display: flex;
+    }
+    
+    .menu-toggle, .close-menu {
+        display: none !important;
     }
 }
